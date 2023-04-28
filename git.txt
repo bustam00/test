@@ -1,0 +1,54 @@
+git관련
+
+working directory - 파일의 변경사항
+staging area - 버전으로 기록하기 위한 파일 변경사항의 목록
+repository - 커빗(버전)들이 기록되는 곳
+
+working directory에 있는 파일을 untracked 상태 또는 modified 상태의 파일이라고 하는듯.
+이때 git add <file> 이렇게 해서 staging area로 올림.
+git add <file> 
+
+그리고 staged 상태의 파일들을 커밋을 통해 버전으로 기록한다.
+SHA-1 해시를 사용하여 40자 길이의 체크섬을 생성하고, 이를 통해 고유한 커밋을 표기 한다.
+커밋 메시지는 변경 사항을 나타낼수 있도록 명확하게 작성해야 함.
+git commit -m '<커밋메시지>' 
+이게 별 다른 말이 없는거 보면 staged에 있는 파일을 차례대로 커밋해 주는것 같음.
+
+git log - 현재 저장소에 기록된 커밋을 조회할 수 있고, 다양한 옵션을 통해 로그를 조회할 수 있다.  ex)git log-1   git log --oneline 등등
+git log
+
+git status - git 저장소에 있는 파일의 상태를 확인하기 위하여 활용
+다음 상태의 파일을 알 수 있음 - untracked files, changes not staged for commit , changes to be committed
+noting to commit, working tree clean <- ?? 여기는 아직 잘 모르겠음.
+
+status로 확인할 수 있는 파일의 상태
+tracked - 이전부터 버전으로 관리되고 있는 파일
+unmodified - git status에 나타나지 않음
+modified - changes not staged for commit
+staged - changes to be committed
+untracked - 버전으로 관리된 적 없는 파일 (파일을 새로 만든 경우)
+
+
+<기초 명령어>
+git init   : 로컬 저장소 생성
+git add<파일명>   : 특정 파일/ 폴더의 변경사항 추가
+git commit -m '<커밋메시지>'  : 커밋(버전 기록)
+git status  : 상태 확인
+got log  : 버전 확인
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
